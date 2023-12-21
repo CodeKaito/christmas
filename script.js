@@ -17,8 +17,9 @@ function createSnowflake() {
     var christmasMusic = document.getElementById('christmasMusic');
   
     if (nameInput.value.trim() !== '') {
-      greetingMessage.textContent = `Jerome ti augura un Buon Natale, ${nameInput.value}!`;
+      greetingMessage.textContent = `Buon Natale ${nameInput.value}! da Jerome`;
       greeting.classList.remove('hidden');
+      document.getElementById('mickey').classList.remove('hidden');
       nameInput.classList.add('hidden');
       document.querySelector('label').classList.add('hidden');
       document.querySelector('button').classList.add('hidden');
