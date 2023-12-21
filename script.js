@@ -10,7 +10,15 @@ function createSnowflake() {
     // Inserisci snowflake all'interno del nuovo contenitore
     snowContainer.appendChild(snowflake);
   }
-  
+  function createFireworks() {
+    const fireworks = document.createElement('div');
+    const cardContainer = document.getElementById('card-container');
+    fireworks.classList.add('fireworks');
+
+    // Inserisci snowflake all'interno del nuovo contenitore
+    cardContainer.appendChild(fireworks);
+  }
+
   function openGift() {
     var greeting = document.getElementById('greeting');
     var greetingMessage = document.getElementById('greetingMessage');
@@ -20,6 +28,14 @@ function createSnowflake() {
       greetingMessage.textContent = `Buon Natale ${nameInput.value}! da Jerome`;
       greeting.classList.remove('hidden');
       document.getElementById('mickey').classList.remove('hidden');
+      // Select all elements with the 'firework' class
+      var fireworks = document.querySelectorAll('.firework');
+
+      // Loop through each selected element and remove the 'hidden' class
+      fireworks.forEach(function(firework) {
+        firework.classList.remove('hidden');
+      });
+
       nameInput.classList.add('hidden');
       document.querySelector('label').classList.add('hidden');
       document.querySelector('button').classList.add('hidden');
