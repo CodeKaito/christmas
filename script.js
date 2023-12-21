@@ -5,7 +5,7 @@ function openGift() {
     var christmasMusic = document.getElementById('christmasMusic');
   
     if (nameInput.value.trim() !== '') {
-      greetingMessage.textContent = `Merry Christmas, ${nameInput.value}!`;
+      greetingMessage.textContent = `Jerome ti augura un Buon Natale, ${nameInput.value}!`;
       greeting.classList.remove('hidden');
       christmasMusic.play(); // Play the Christmas music
     }
