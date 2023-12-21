@@ -15,14 +15,11 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: #e74c3c; /* Red background */
+  background-color: #e74c3c;
   color: #fff; /* White text */
   font-family: 'Arial', sans-serif;
   animation: color var(--anim-time) linear infinite;
-}
-
-body {
-  background-color: var(--bg-color);
+  animation-iteration-count: 1;
 }
 
 #candy {
@@ -55,7 +52,7 @@ body {
     var(--candy-color, 2) 15px,
     var(--candy-color, 1) 15px,
     var(--candy-color, 1) 30px);
-  animation: load var(--anim-time) ease-in infinite;
+  animation: load var(--anim-time) ease-in forwards;
 }
 
 #candy-loader::after {
@@ -117,6 +114,9 @@ body {
 }
 
 @keyframes color {
+  0% {
+    background-color: var(--bg-color);
+  }
   55% {
     background-color: var(--bg-color);
   }
@@ -125,6 +125,9 @@ body {
   }
   95% {
     background-color: var(--christmas-color);
+  }
+  100% {
+    background-color: #e74c3c;
   }
 }
 
