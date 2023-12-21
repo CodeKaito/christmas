@@ -201,7 +201,8 @@ input {
 button {
   background-color: #2ecc71; /* Green button background */
   color: #fff; /* White text */
-  padding: 10px 20px;
+  padding: 15px 30px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
