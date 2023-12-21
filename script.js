@@ -36,32 +36,32 @@ function createSnowflake() {
     var christmasMusic = document.getElementById('christmasMusic');
   
     if (nameInput.value.trim() !== '') {
-      greetingMessage.textContent = `Buon Natale ${nameInput.value}! da Jerome`;
-      greeting.classList.remove('hidden');
-      document.getElementById('mickey').classList.remove('hidden');
-      // Select all elements with the 'firework' class
-      var fireworks = document.querySelectorAll('.firework');
+        type(`Buon Natale ${nameInput.value}! da Jerome`);
+        greeting.classList.remove('hidden');
+        document.getElementById('mickey').classList.remove('hidden');
+        // Select all elements with the 'firework' class
+        var fireworks = document.querySelectorAll('.firework');
 
-      // Loop through each selected element and remove the 'hidden' class
-      fireworks.forEach(function(firework) {
-        firework.classList.remove('hidden');
-      });
+        // Loop through each selected element and remove the 'hidden' class
+        fireworks.forEach(function(firework) {
+            firework.classList.remove('hidden');
+        });
 
-      nameInput.classList.add('hidden');
-      document.querySelector('label').classList.add('hidden');
-      document.querySelector('button').classList.add('hidden');
-      
-      christmasMusic.play(); // Play the Christmas music
+        nameInput.classList.add('hidden');
+        document.querySelector('label').classList.add('hidden');
+        document.querySelector('button').classList.add('hidden');
+        
+        christmasMusic.play(); // Play the Christmas music
   
-      // Aggiungi la classe per far scendere la neve
-      document.body.classList.add('snowfall-active');
+        // Aggiungi la classe per far scendere la neve
+        document.body.classList.add('snowfall-active');
   
-      // Crea 50 fiocchi di neve
-      for (let i = 0; i < 50; i++) {
-        createSnowflake();
-      }
+        // Crea 50 fiocchi di neve
+        for (let i = 0; i < 50; i++) {
+            createSnowflake();
+        }
     }
-  }
+}
   
   document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('.snow-container');
@@ -77,3 +77,15 @@ function createSnowflake() {
   });
 
   
+
+  function type(word) {
+    let i = 0;
+    let writing = setInterval(() => {
+        greetingMessage.textContent += word.charAt(i);
+        i++;
+        if (i >= word.length) {
+            clearInterval(writing);
+            setTimeout(erase, 1000);
+        }
+    }, 75);
+}
