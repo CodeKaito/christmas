@@ -19,7 +19,7 @@ function createSnowflake() {
     if (nameInput.value.trim() !== '') {
       greetingMessage.textContent = `Buon Natale ${nameInput.value}! da Jerome`;
       greeting.classList.remove('hidden');
-      document.getElementById('grinch').classList.remove('hidden');
+      document.getElementById('mickey').classList.remove('hidden');
       nameInput.classList.add('hidden');
       document.querySelector('label').classList.add('hidden');
       document.querySelector('button').classList.add('hidden');
