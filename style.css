@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e74c3c; /* Red background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card-container {
+    text-align: center;
+  }
+  
+  .card {
+    background-color: #fff; /* White card background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    color: #e74c3c; /* Red text */
+  }
+  
+  .content {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Red text for label */
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #e74c3c; /* Red border for input */
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #2ecc71; /* Green button background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for button color */
+  }
+  
+  button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+  
+  #greeting {
+    margin-top: 20px;
+  }
+  
+  #greetingMessage {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Red text for greeting */
+  }
+  
+  #gift-box {
+    font-size: 2em;
+    color: #e74c3c; /* Red color for gift box */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

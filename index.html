@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Christmas Card</title>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="header">
+      </div>
+      <div class="content">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <button onclick="openGift()">Click me</button>
+        <div id="greeting" class="hidden">
+          <h1 id="greetingMessage"></h1>
+          <div id="gift-box">🎁</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
