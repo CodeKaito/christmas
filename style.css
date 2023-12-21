@@ -9,8 +9,17 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+#snowContainer {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-container {
-  text-align: center;
+    text-align: center;
 }
 
 .card {
@@ -19,6 +28,23 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.snowflake {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes snowfall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
 
 .header h1 {
   color: #e74c3c; /* Red text */
