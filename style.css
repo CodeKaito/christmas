@@ -9,6 +9,10 @@
   --candy-h: 300px;
 }
 
+/* font-family: 'Caveat', cursive;
+   font-family: 'Montserrat', sans-serif;
+*/
+
 body {
   display: flex;
   align-items: center;
@@ -20,6 +24,7 @@ body {
   font-family: 'Arial', sans-serif;
   animation: color var(--anim-time) linear infinite;
   animation-iteration-count: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #candy {
@@ -208,10 +213,13 @@ button:hover {
 
 #greeting {
   margin-top: 20px;
+  font-family: 'Caveat', cursive;
 }
 
 #greetingMessage {
-  font-size: 1.5em;
+  font-family: 'Caveat', cursive;
+  font-size: 2.5em;
+  font-weight: 200;
   margin-bottom: 10px;
   color: #e74c3c; /* Red text for greeting */
 }
