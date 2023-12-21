@@ -1,3 +1,14 @@
+// Wait for the page to load
+window.onload = function() {
+  // Simulate a delay of 5 seconds (5000 milliseconds)
+  setTimeout(function() {
+    // Hide the loader
+    document.querySelector('.loader-container').style.display = 'none';
+    // Show the main content
+    document.querySelector('#snowContainer').style.display = 'flex';
+  }, 8000);
+};
+
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.className = 'snowflake';
@@ -64,4 +75,5 @@ function createSnowflake() {
       container.appendChild(snowflake);
     }
   });
+
   
